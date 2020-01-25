@@ -1,6 +1,5 @@
 package com.skilldistillery.homework;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MakeChange {
@@ -35,9 +34,7 @@ public class MakeChange {
 		}
 
 		else if (money > price) {
-			DecimalFormat df = new DecimalFormat("##.##");
-			System.out.println("Change provided: " + df.format(change));
-
+			System.out.printf("Change provided %.2f %n", change);
 			int changeMultiplied = (int) (change * 100);
 
 			if (changeMultiplied >= twentyDollars) {
