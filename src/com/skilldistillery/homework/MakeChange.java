@@ -3,17 +3,29 @@ package com.skilldistillery.homework;
 import java.util.Scanner;
 
 public class MakeChange {
+	
+	static double price;
+	static double money;
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
+		
+		welcomeQuestions();
+		amountCalculations(price, money);
+		
+	}
+
+	public static void welcomeQuestions() {
 		Scanner keyboard = new Scanner(System.in);
 
 		System.out.print("What is the price of the item: ");
-		double price = keyboard.nextDouble();
+		price = keyboard.nextDouble();
 
 		System.out.print("How much money was tendered: ");
-		double money = keyboard.nextDouble();
+		money = keyboard.nextDouble();
 		keyboard.close();
-
+	}
+	
+	public static void amountCalculations(double price2, double money2) {
 		int oneCent = 1;
 		int fiveCents = 5;
 		int tenCents = 10;
@@ -22,19 +34,20 @@ public class MakeChange {
 		int fiveDollars = 500;
 		int tenDollars = 1000;
 		int twentyDollars = 2000;
+		
+		double change = money2 - price2;
 
-		double change = money - price;
-
-		if (money == price) {
+		if (money2 == price2) {
 			System.out.println("You have provided the exact amount");
 		}
 
-		else if (money < price) {
+		else if (money2 < price2) {
 			System.out.println("You have provided too little money");
 		}
 
-		else if (money > price) {
+		else if (money2 > price2) {
 			System.out.printf("Change provided %.2f %n", change);
+
 			int changeMultiplied = (int) (change * 100);
 
 			if (changeMultiplied >= twentyDollars) {
@@ -120,5 +133,4 @@ public class MakeChange {
 			}
 		}
 	}
-
 }
