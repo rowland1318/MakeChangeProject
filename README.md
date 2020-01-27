@@ -5,11 +5,11 @@
 This is program is a **cash register** *application* that asks the user to input the amount of an item they would like to purchase and the amount the user gave to the cashier to pay for that item. If the amount paid is not enough, it gives an error message. If the amount paid equals the price of the item, it will give a message that says the exact amount was provided. If the amount paid is more than the price of the item then the cash register application determines how much change the user will receive, to include the amount of each bill/cent ($20, $10, $1, 25c, 10c, 5c, 1c).
 
 ### Concepts
-Methods
-if Statements
-Modulo Operators
-The printf() Method
-Casting
+* Methods
+* if Statements
+* Modulo Operators
+* The printf() Method
+* Casting Data Types
 
 ### Technologies Used
 
