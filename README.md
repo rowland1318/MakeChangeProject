@@ -21,4 +21,4 @@ This is program is a **cash register** *application* that asks the user to input
 * The print f() method allowed me to counteract the number of decimal places that were being output by double numbers.
 * Casting allowed me to produce an integer when multiplying with a double.
 * I learned that using methods makes it easier to identify an issue you in your code. Throughout my code testing I ran into issues and could not identify the core problem because I put all of my code in the main at first.
-*I learned how to use the modulo operator to determine how much change was needed for each bill/cent.
+* I learned how to use the modulo operator to determine how much change was needed for each bill/cent.
