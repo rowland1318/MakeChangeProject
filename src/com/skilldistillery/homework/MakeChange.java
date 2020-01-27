@@ -79,7 +79,7 @@ public class MakeChange {
 					System.out.println(quarterAmount + " quarters");
 				}
 			}
-			if (change >= .10) {
+			if (change >= 10) {
 				int dimeAmount = (int) (change / 10);
 				change = (change % 10);
 				if (dimeAmount == 1) {
