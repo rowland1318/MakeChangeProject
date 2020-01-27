@@ -98,11 +98,13 @@ public class MakeChange {
 				}
 			}
 			if (change >= 1) {
-				int pennyAmount = (int) (change / 1);
-				if (pennyAmount == 1) {
-					System.out.println(pennyAmount + " penny");
-				} else if (pennyAmount > 1) {
-					System.out.println(pennyAmount + " pennies");
+				
+				double pennyAmount = (change / 1);
+				int roundedPenny = (int) (pennyAmount + 0.5);
+				if (roundedPenny == 1) {
+					System.out.println(roundedPenny + " penny");
+				} else if (roundedPenny > 0) {
+				System.out.println(roundedPenny + " pennies");
 				}
 			}
 		}
